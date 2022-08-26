@@ -161,6 +161,9 @@
         <h2>Resume</h2>
         <p>Check My Resume</p>
       </div>
+
+      <a href="~/assets/pdf/SamuelNicholsResume.pdf" target="_blank">Resume PDF Download</a>
+
       <div class="row">
         <div class="col-lg-6">
           <h3 class="resume-title">Summary</h3>
@@ -238,24 +241,24 @@
       <div class="row">
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
           <div class="icon-box">
-            <div class="icon"><i class="bx bxl-dribbble"></i></div>
-            <h4><a href="https://www.linkedin.com/in/jonathan-pedroza-a13999226/" target="_blank">Personal Site</a></h4>
+            <img src="~/assets/img/ClassmateJon.jpg" class="img-fluid" alt="">
+            <h4><a href="https://www.linkedin.com/in/jonathan-pedroza-a13999226/" target="_blank">LinkedIn</a></h4>
             <p>Jonathan Perdroza</p>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
           <div class="icon-box">
-            <div class="icon"><i class="bx bx-file"></i></div>
-            <h4><a href="jakebushcoding.com" target="_blank">Personal Site</a></h4>
+            <img src="~/assets/img/ClassmateJake.jpg" class="img-fluid" alt="">
+            <h4><a href="https://www.linkedin.com/in/jake-bush-1b47a3249/" target="_blank">LinkedIn</a></h4>
             <p>Jake Bush</p>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
           <div class="icon-box">
-            <div class="icon"><i class="bx bx-tachometer"></i></div>
-            <h4><a href="https://www.linkedin.com/in/blake-woods-216inf/" target="_blank">Personal Site</a></h4>
+            <img src="~/assets/img/ClassmateBlake.jpg" class="img-fluid" alt="">
+            <h4><a href="https://www.linkedin.com/in/blake-woods-216inf/" target="_blank">LinkedIn</a></h4>
             <p>Blake Woods</p>
           </div>
         </div>
@@ -271,7 +274,7 @@
 
       <div class="section-title">
         <h2>Portfolio</h2>
-        <p>My Works</p>
+        <p>My Projects With Links To Github</p>
       </div>
 
       @*<div class="row">
@@ -289,47 +292,57 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="portfolio-wrap">
-            <img src="" class="img-fluid" alt="">
+            <img src="~/assets/img/dungeon.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Dungeon Application</h4>
-              <p>App</p>
               <div class="portfolio-links">
-                <a href="" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="https://github.com/DevSamNichols/DungeonApplication" target="_blank" title="Link to GitHub"><i class="bx bx-link"></i></a>
               </div>
+              <p>
+                  This is a text based game I made that taught me the basics of C#. In this game I used Inheritance, utilized class libraries, and 
+                  used looping logic to make this a fully functional dungeon - escape game.
+              </p>
             </div>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
           <div class="portfolio-wrap">
-            <img src="" class="img-fluid" alt="">
+            <img src="~/assets/img/webapi.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
+              <h4>ToDo API</h4>
               <div class="portfolio-links">
-                <a href="" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="https://github.com/DevSamNichols/ToDoAPI" target="_blank" title="Link to GitHub"><i class="bx bx-link"></i></a>
               </div>
+              <p>
+                  Here I created an API that request data from my custom database. In my database I made a simple To - Do list and that is the data the API is requesting
+                  and responding with.
+              </p>
             </div>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="portfolio-wrap">
-            <img src="" class="img-fluid" alt="">
+            <img src="~/assets/img/Storefrontapp.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>App 2</h4>
-              <p>App</p>
+              <h4>StoreFront Application</h4>
               <div class="portfolio-links">
-                <a href="" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="https://github.com/DevSamNichols/StoreFrontMVC" target="_blank" title="Link to GitHub"><i class="bx bx-link"></i></a>
               </div>
+              <p>
+                  Here is an e-commerce project I created with .Net Core using MVC Architecture. I started by creating a database, entered multiple products and other
+                  sample data into that database, Created and MVC app with Identity Samples, Converted my template and created my metadata, I then used Entity Framework
+                  to create controllers with views for crud functionality, and finally edited those views and linked my products to a data table.
+              </p>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+        @*Commented out, can be used to link future projects below*@
+
+        
+        @*<div class="col-lg-4 col-md-6 portfolio-item filter-card">
           <div class="portfolio-wrap">
             <img src="" class="img-fluid" alt="">
             <div class="portfolio-info">
@@ -411,7 +424,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div>*@
 
       </div>
 
