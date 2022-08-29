@@ -1,0 +1,53 @@
+﻿@{
+    ViewData["Title"] = "Email Confirmation";
+}
+
+@model PersonalSiteMVC.Models.ContactViewModel
+
+        <!-- ======= Confirmation Section ======= -->
+        <section class="contact" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-lg-12">
+
+                        <div class="info-box">
+                            <i class="bx bx-check-circle"></i>
+                            <h3>Message Sent!</h3>
+                            @*
+                                When referencing a SPECIFIC OBJECT that fits the model (like the 
+                                cvm object that was passed to this View), we use a capital M -- "Model"
+                            *@
+                            <p>
+                               Thank you for contacting me! I will usually respond 
+                               to your message using the provided email address, @Model.Email, 
+                               in the next 1-3 business days.
+                            </p>
+
+                            <br />
+
+                            <div class="offset-3 col-md-6 text-center">
+                                <p>
+                                    You sent the following message on 
+                                    @DateTime.Now.Date.ToShortDateString() at 
+                                    @DateTime.Now.ToShortTimeString() :
+                                </p>
+                            </div>
+
+                            <br />
+
+                            <div class="offset-3 col-md-6">
+                                <p>
+                                    <em>@Model.Message</em>
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section><!-- End Confirmation Section -->
